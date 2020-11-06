@@ -29,7 +29,7 @@ Depending on your OS/usage requirements, instructions can be found [here](https:
 
 ### 2. get the script
 
-The script is hosted [here](https://gist.github.com/alexxss/9146292a1acee71104a65cbfe81eceec). Below are a couple of suggested methods to download it.
+The script is hosted [here](https://gist.github.com/alexxss/9146292a1acee71104a65cbfe81eceec). A couple of suggested methods to download it:
 
 #### Using `git clone`
 After validating your `doctl` installation, download the script using `git clone`:
@@ -75,10 +75,10 @@ What do you want to do?
 5) Create snapshot
 6) Delete snapshot
 7) Quit
-#? 2
+#? 
 </pre>
 
-Features
+Functions
 -----
 
 ### 1. show droplets
@@ -95,6 +95,13 @@ xxxxxxxx    snapshot123               2020-11-05T15:18:03Z    4.89 GiB
 </pre>
 
 ### 3. new droplet
+You can create a droplet by providing the ID of an existing snapshot, or you can choose from a list of your snapshots. The option to create from images (eg DO ubuntu) or customize droplet specs is not yet implemented... The default droplet spec written into the script is:
+| spec | value |
+|--|--|
+| region | sgp1 |
+| size | g-2vcpu-8gb |
+It is suggested to do a search and replace on the script to substitue the value you want.
+
 #### From snapshot ID
 <pre>Snapshot ID? (leave blank to abort): xxxxxxxx
 Droplet name? (leave blank to abort): droplet
