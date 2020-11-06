@@ -95,12 +95,11 @@ xxxxxxxx    snapshot123               2020-11-05T15:18:03Z    4.89 GiB
 </pre>
 
 ### 3. new droplet
-You can create a droplet by providing the ID of an existing snapshot, or you can choose from a list of your snapshots. The option to create from images (eg DO ubuntu) or customize droplet specs is not yet implemented... The default droplet spec written into the script is:
+You can create a droplet by providing the ID of an existing snapshot, or you can choose from a list of your snapshots. The option to create from images (eg DO ubuntu) or customize droplet specs is not yet implemented... You can do a search and replace on the script to substitue the value you want. The default droplet spec written into the script is:
 | spec | value |
 |--|--|
 | region | sgp1 |
 | size | g-2vcpu-8gb |
-It is suggested to do a search and replace on the script to substitue the value you want.
 
 #### From snapshot ID
 <pre>Snapshot ID? (leave blank to abort): xxxxxxxx
